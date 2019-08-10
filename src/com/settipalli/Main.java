@@ -23,12 +23,12 @@ public class Main {
             System.err.println("\t Date missing.");
         }
         try {
-            details = line.substring(11, 50 + 1).trim();
+            details = line.substring(11, 50 + 1).trim().replace(",", "");
         } catch (StringIndexOutOfBoundsException ex) {
             System.err.println("\t Details missing.");
         }
         try {
-            refNumber = line.substring(53, 70 + 1).trim();
+            refNumber = line.substring(53, 70 + 1).trim().replace(",", "");
         } catch (StringIndexOutOfBoundsException ex) {
             System.err.println("\t Reference Number missing.");
         }
